@@ -2,7 +2,7 @@
 import React, {useState} from "react"
 import Link from "next/link"
 import { useTheme } from "next-themes"
-import Hamburger from "./hamburger"
+import Hamburger from "./Hamburger"
 
 interface NavItem {
     label: string
@@ -35,14 +35,14 @@ const Navbar = () => {
 
     return (
         <header className="m-0 p-0">
-            <nav className="justify-between md:items-center md:flex pt-15 mx-24 sm:flex">
+            <nav className="justify-between items-center flex pt-15 mx-24 ">
                 <div>
                     <h2 className="font-bold text-lg">CA</h2>
                 </div>
-                <div className=" md:flex md:gap-4 cursor-pointer sm:hidden ">
+                <div className="  md:flex md:gap-4 cursor-pointer hidden">
                     
                     {NAV_ITEMS.map((item,idx) => { 
-                    return <a className="hover:text-emerald-400" key={idx}>{item.label}</a>
+                    return <a className="hover:text-emerald-400  " key={idx}>{item.label}</a>
                     })}
                 </div>
                 <div className="md:hidden">
@@ -54,6 +54,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-
-
