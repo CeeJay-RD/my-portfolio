@@ -77,20 +77,22 @@ const Navbar = () => {
               />
             </button>
           </div>
-
         </nav>
-        <div className={` ${
+        <div
+          className={` ${
             isOpen
-            ? "md:hidden dark:bg-slate-800 w-auto h-auto py-6 rounded-3xl flex flex-col justify-center items-center mx-24 gap-5"
-            : "hidden"}
-            `}>
-        {NAV_ITEMS.map((item, idx) => {
-              return (
-                <a className="hover:text-emerald-400  " key={idx}>
-                  {item.label}
-                </a>
-              );
-            })}
+              ? "md:hidden dark:bg-slate-800 border-solid dark:border-slate-700 border-emerald-400 border-2 w-auto h-auto py-6 rounded-3xl flex flex-col justify-center items-center mx-6 gap-5"
+              : "hidden"
+          }
+            `}
+        >
+          {NAV_ITEMS.map((item, idx) => {
+            return (
+              <a className="hover:text-emerald-400 transition ease transform duration-300 " key={idx}>
+                {item.label}
+              </a>
+            );
+          })}
         </div>
       </header>
     );
