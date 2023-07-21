@@ -38,7 +38,7 @@ const Navbar = () => {
 
     return (
       <header className="m-0 p-0 ">
-        <nav className="justify-between items-center flex pt-15 mx-24 ">
+        <nav className="justify-between items-center flex pt-15 mx-6 md:mx-24 ">
           <div>
             <h2 className="font-bold text-lg">CA</h2>
           </div>
