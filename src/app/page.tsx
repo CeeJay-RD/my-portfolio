@@ -32,17 +32,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" py-24 px-36 flex items-center justify-between w-full h-full">
+      <section className=" py-24 px-9 md:px-36 flex flex-col-reverse md:flex md:flex-row items-center justify-between w-full h-full">
         <div className="">
           <div>
-            <h3 className="text-h3 font-bold underline underline-offset-8 decoration-emerald-400">
+            <h3 className=" flex order-1 text-h3 font-bold underline underline-offset-8 decoration-emerald-400">
               About me
             </h3>
           </div>
 
           <div className="flex mt-12 justify-start item gap-11">
             <div className=" h-auto w-1 text-emerald-50 bg-slate-50"></div>
-            <p className=" max-w-md text-2xl">
+            <p className=" max-w-md md:text-2xl text-xs">
               I'm passionate about creating dynamic and user-friendly web
               solutions. Let's build something great together! With experience in
               different roles and industries!
@@ -61,8 +61,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
-          <img src="" alt="salute-memoji" className=" ml-16"/>
+        <div className="">
+          <img src="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Salute%20Memoji.png?raw=true" alt="salute-memoji" className="md:w-8/12 md:ml-16"/>
         </div>
       </section>
     </main>
