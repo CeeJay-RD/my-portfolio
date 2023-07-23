@@ -4,10 +4,11 @@ import SkillCard from "./components/SkillCard";
 import { motion } from "framer-motion"
 
 
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between mt-24">
-      <section className=" p-24 bg-gradient-dark w-full h-full flex flex-col items-center justify-center">
+      <section className=" p-24 bg-gradient-light dark:bg-gradient-dark w-full h-full flex flex-col items-center justify-center">
         <div className="flex flex-col gap-11 items-center ">
           <div className=" bg-white rounded-full w-40 h-40 p-2 grid items-center">
             <img
@@ -20,7 +21,7 @@ export default function Home() {
             <h3 className="text-h3 font-bold text-center	mt-4">
               Hey, I'm <span className=" text-emerald-200">Carlos</span>
             </h3>
-            <h1 className="max-w-5xl text-h1 text-center font-bold">
+            <h1 className=" max-w-full text-h1 text-center font-bold">
               {" "}
               <span className="text-slate-400">&lt;</span>
               <span className="text-emerald-400">h1</span>
@@ -43,7 +44,7 @@ export default function Home() {
           </div>
 
           <div className="flex mt-12 justify-start item gap-11">
-            <div className=" h-auto w-1 text-emerald-50 bg-slate-50"></div>
+            <div className=" h-auto w-1 bg-slate-600 dark:bg-slate-50"></div>
             <p className=" max-w-md text-p">
               I'm passionate about creating dynamic and user-friendly web
               solutions. Let's build something great together! With experience
