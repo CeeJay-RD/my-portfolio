@@ -7,9 +7,11 @@ interface SkillProps {
 
 const SkillCard: React.FC<SkillProps> = ({ imgSrc, text }) => {
     return (
-      <div className="flex-col">
-        <img src={imgSrc} alt={text} className="w-32 bg-cyan-100 rounded-3xl p-4 " />
-        <p className="w-32 text-center">{text}</p>
+      <div>
+        <div className="flex flex-col  items-center">
+          <img src={imgSrc} alt={text} className="" />
+          <p className="">{text}</p>
+        </div>
       </div>
     );
   };
