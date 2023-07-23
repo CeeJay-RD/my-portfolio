@@ -49,14 +49,14 @@ export default function Home() {
         </div>
 
         <div className=" mt-8">
-          <h4 className=" text-4xl">Skills</h4>
-          <div>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/React.png" text="React"/>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/NodeJS.png" text="Node.js"/>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/mongo.png" text="MongoDB"/>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Express.png" text="Express"/>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Tailwind.png" text="Tailwind"/>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/JavasScript.png" text="Javascript"/>
+          <h4 className=" text-4xl font-bold">Skills</h4>
+          <div className=" grid grid-cols-3 gap-1 max-w-xl mt-12">
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/React.png?raw=true" text="React"/>
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/NodeJS.png?raw=true" text="Node.js"/>
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/mongo.png?raw=true" text="MongoDB"/>
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Express.png?raw=true" text="Express"/>
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Tailwind.png?raw=true" text="Tailwind"/>
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/JavasScript.png?raw=true" text="Javascript"/>
           </div>
         </div>
 
