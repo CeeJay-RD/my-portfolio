@@ -1,5 +1,7 @@
+"use client"
 import Image from "next/image";
 import SkillCard from "./components/SkillCard";
+import { motion } from "framer-motion"
 
 
 export default function Home() {
@@ -44,26 +46,62 @@ export default function Home() {
             <div className=" h-auto w-1 text-emerald-50 bg-slate-50"></div>
             <p className=" max-w-md text-p">
               I'm passionate about creating dynamic and user-friendly web
-              solutions. Let's build something great together! With experience in
-              different roles and industries!
+              solutions. Let's build something great together! With experience
+              in different roles and industries!
             </p>
           </div>
 
           <div className=" mt-8">
             <h4 className=" text-4xl font-bold">Skills</h4>
-            <div className=" grid grid-cols-3 gap-1 max-w-xl mt-12">
-              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/React.png?raw=true" text="React"/>
-              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/NodeJS.png?raw=true" text="Node.js"/>
-              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/mongo.png?raw=true" text="MongoDB"/>
-              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Express.png?raw=true" text="Express"/>
-              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Tailwind.png?raw=true" text="Tailwind"/>
-              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/JavasScript.png?raw=true" text="Javascript"/>
-            </div>
+            <motion.div
+              className=" grid grid-cols-3 gap-1 max-w-xl mt-12"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+            >
+              <SkillCard
+                imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/React.png?raw=true"
+                text="React"
+              />
+              <SkillCard
+                imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/NodeJS.png?raw=true"
+                text="Node.js"
+              />
+              <SkillCard
+                imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/mongo.png?raw=true"
+                text="MongoDB"
+              />
+              <SkillCard
+                imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Express.png?raw=true"
+                text="Express"
+              />
+              <SkillCard
+                imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Tailwind.png?raw=true"
+                text="Tailwind"
+              />
+              <SkillCard
+                imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/JavasScript.png?raw=true"
+                text="Javascript"
+              />
+            </motion.div>
           </div>
         </div>
-        <div className="">
-          <img src="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Salute%20Memoji.png?raw=true" alt="salute-memoji" className="md:w-8/12 md:ml-16"/>
-        </div>
+        <motion.div 
+          
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className=""
+        >
+          <img
+            src="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Salute%20Memoji.png?raw=true"
+            alt="salute-memoji"
+            className="md:w-8/12 md:ml-16"
+          />
+        </motion.div>
       </section>
     </main>
   );
