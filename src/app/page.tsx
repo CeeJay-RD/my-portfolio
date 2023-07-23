@@ -1,4 +1,7 @@
 import Image from "next/image";
+import SkillCard from "./components/SkillCard";
+
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between mt-24">
@@ -48,12 +51,12 @@ export default function Home() {
         <div className=" mt-8">
           <h4 className=" text-4xl">Skills</h4>
           <div>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/React.png" text="React"/>
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/NodeJS.png" text="Node.js"/>
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/mongo.png" text="MongoDB"/>
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Express.png" text="Express"/>
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Tailwind.png" text="Tailwind"/>
+            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/JavasScript.png" text="Javascript"/>
           </div>
         </div>
 
