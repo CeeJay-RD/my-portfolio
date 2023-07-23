@@ -32,36 +32,37 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" p-24 flex flex-col   w-full h-full">
-        <div>
-          <h3 className="text-h3 font-bold underline underline-offset-8 decoration-emerald-400">
-            About me
-          </h3>
-        </div>
+      <section className=" py-24 px-36 flex items-center justify-between w-full h-full">
+        <div className="">
+          <div>
+            <h3 className="text-h3 font-bold underline underline-offset-8 decoration-emerald-400">
+              About me
+            </h3>
+          </div>
 
-        <div className="flex mt-12 justify-start item gap-11">
-          <div className=" h-auto w-1 text-emerald-50 bg-slate-50"></div>
-          <p className=" max-w-md text-2xl">
-            I'm passionate about creating dynamic and user-friendly web
-            solutions. Let's build something great together! With experience in
-            different roles and industries!
-          </p>
-        </div>
+          <div className="flex mt-12 justify-start item gap-11">
+            <div className=" h-auto w-1 text-emerald-50 bg-slate-50"></div>
+            <p className=" max-w-md text-2xl">
+              I'm passionate about creating dynamic and user-friendly web
+              solutions. Let's build something great together! With experience in
+              different roles and industries!
+            </p>
+          </div>
 
-        <div className=" mt-8">
-          <h4 className=" text-4xl font-bold">Skills</h4>
-          <div className=" grid grid-cols-3 gap-1 max-w-xl mt-12">
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/React.png?raw=true" text="React"/>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/NodeJS.png?raw=true" text="Node.js"/>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/mongo.png?raw=true" text="MongoDB"/>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Express.png?raw=true" text="Express"/>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Tailwind.png?raw=true" text="Tailwind"/>
-            <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/JavasScript.png?raw=true" text="Javascript"/>
+          <div className=" mt-8">
+            <h4 className=" text-4xl font-bold">Skills</h4>
+            <div className=" grid grid-cols-3 gap-1 max-w-xl mt-12">
+              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/React.png?raw=true" text="React"/>
+              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/NodeJS.png?raw=true" text="Node.js"/>
+              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/mongo.png?raw=true" text="MongoDB"/>
+              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Express.png?raw=true" text="Express"/>
+              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Tailwind.png?raw=true" text="Tailwind"/>
+              <SkillCard imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/JavasScript.png?raw=true" text="Javascript"/>
+            </div>
           </div>
         </div>
-
         <div>
-          <img src="" alt="salute-memoji" />
+          <img src="" alt="salute-memoji" className=" ml-16"/>
         </div>
       </section>
     </main>
