@@ -34,15 +34,15 @@ export default function Home() {
 
       <section className=" py-24 px-9 md:px-36 flex flex-col-reverse md:flex md:flex-row items-center justify-between w-full h-full">
         <div className="">
-          <div>
-            <h3 className=" flex order-1 text-h3 font-bold underline underline-offset-8 decoration-emerald-400">
+          <div className="text-h1">
+            <h1 className="text-h1 font-bold underline underline-offset-8 decoration-emerald-400">
               About me
-            </h3>
+            </h1>
           </div>
 
           <div className="flex mt-12 justify-start item gap-11">
             <div className=" h-auto w-1 text-emerald-50 bg-slate-50"></div>
-            <p className=" max-w-md md:text-2xl text-xs">
+            <p className=" max-w-md text-p">
               I'm passionate about creating dynamic and user-friendly web
               solutions. Let's build something great together! With experience in
               different roles and industries!
