@@ -18,8 +18,9 @@ module.exports = {
         '15': '3.75rem'
       },
       fontSize: {
-        'h1': "clamp(2rem, 1vw, 3.75rem)",
-        'h3': "clamp(1.75rem, 5vw, 3rem)"
+        'h1': "clamp(2rem, 2.93vw, 5.75rem)",
+        'h3': "clamp(1.25rem, 5vw, 3rem)",
+        'p': "clamp(1rem, 2vw, 1.38rem)"
       },
       
     },
