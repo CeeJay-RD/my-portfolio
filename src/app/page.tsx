@@ -2,10 +2,13 @@
 import Image from "next/image";
 import SkillCard from "./components/SkillCard";
 import { motion } from "framer-motion"
+import Download from "./components/ui/Download";
 
 
 
 export default function Home() {
+
+ 
   return (
     <main className="flex flex-col items-center justify-between mt-24">
       <section className=" p-24 bg-gradient-light dark:bg-gradient-dark w-full h-full flex flex-col items-center justify-center">
@@ -31,6 +34,10 @@ export default function Home() {
               <span className="text-emerald-400">h1</span>
               <span className="text-slate-400">&gt;</span>{" "}
             </h1>
+            <div className="flex justify-center items-center gap-3 mt-10">
+              <button className=" bg-black py-3 px-5 rounded-md hover:bg-slate-900">Contact Me</button>
+              <Download fileSrc="#" text="Download CV"/>
+            </div>
           </div>
         </div>
       </section>
@@ -59,10 +66,19 @@ export default function Home() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
             >
-              <SkillCard
-                imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/React.png?raw=true"
-                text="React"
-              />
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                transition={{
+                  duration: 0.5,
+                  delay: 0,
+                  ease: [0, 0.71, 0.2, 1.01],
+                }}
+              >
+                <SkillCard
+                  imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/React.png?raw=true"
+                  text="React"
+                />
+              </motion.div>
               <SkillCard
                 imgSrc="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/NodeJS.png?raw=true"
                 text="Node.js"
@@ -86,8 +102,7 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-        <motion.div 
-          
+        <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{
