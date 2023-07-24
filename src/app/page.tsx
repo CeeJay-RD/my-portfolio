@@ -123,9 +123,11 @@ export default function Home() {
 
 
       <section className="py-24 px-9 md:px-36 flex flex-col-reverse md:flex md:flex-row items-center justify-between w-full h-full">
-        <h1 className="text-h1 font-bold max-w-xs text-left">
+        <h1 className="text-h1 font-bold max-w-xs ">
                 Last Projects
         </h1>
+
+        
       </section>
 
     </main>
