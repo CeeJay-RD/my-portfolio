@@ -12,7 +12,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-dark':
-          'linear-gradient(360deg, #2B9B73 0%, #0f172a 97.40%)'
+          'linear-gradient(360deg, #2B9B73 0%, #0f172a 97.40%)',
+        'gradient-light':
+          'radial-gradient(51.70% 194.33% at 45.95% 8.45%, #2B9B73 0%, #9FD5C1 97.40%, #A2D7C3 100%)'
       },
       padding: {
         '15': '3.75rem'
