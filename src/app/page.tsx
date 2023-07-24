@@ -11,6 +11,7 @@ export default function Home() {
  
   return (
     <main className="flex flex-col items-center justify-between mt-24">
+
       <section className=" p-24 bg-gradient-light dark:bg-gradient-dark w-full h-full flex flex-col items-center justify-center">
         <div className="flex flex-col gap-11 items-center ">
           <div className=" bg-white rounded-full w-40 h-40 p-2 grid items-center">
@@ -35,7 +36,7 @@ export default function Home() {
               <span className="text-slate-400">&gt;</span>{" "}
             </h1>
             <div className="flex justify-center items-center gap-3 mt-10">
-              <button className=" bg-black py-3 px-5 rounded-md hover:bg-slate-900">Contact Me</button>
+              <button className=" bg-black text-white py-3 px-5 rounded-md hover:bg-slate-900">Contact Me</button>
               <Download fileSrc="#" text="Download CV"/>
             </div>
           </div>
@@ -119,6 +120,14 @@ export default function Home() {
           />
         </motion.div>
       </section>
+
+
+      <section className="py-24 px-9 md:px-36 flex flex-col-reverse md:flex md:flex-row items-center justify-between w-full h-full">
+        <h1 className="text-h1 font-bold max-w-xs text-left">
+                Last Projects
+        </h1>
+      </section>
+
     </main>
   );
 }
