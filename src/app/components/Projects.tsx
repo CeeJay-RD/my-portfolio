@@ -7,15 +7,40 @@ interface ProjectProps {
     deployLink: string,
 }
 
-const Projects: React.FC<ProjectProps> = ({ title, thumbnail, githubLink, deployLink }) => {
+
+const PROJECT_ITEMS: Array<ProjectProps> = [
+    {
+        title: "Rock, Paper, Scissors",
+        thumbnail: "#",
+        githubLink: "#",
+        deployLink: "#"
+    },
+    {
+        title: "MindNet",
+        thumbnail: "#",
+        githubLink: "#",
+        deployLink: "#"
+    },
+    {
+        title: "Etch-a-Sketch",
+        thumbnail: "#",
+        githubLink: "#",
+        deployLink: "#"
+    },
+
+]
+
+const Projects = () => {
     return (
-        <div>
-            <h3>{title}</h3>
-            <img src={thumbnail} alt={title + "project-image"} />
-            <div>
-                <a href={githubLink}>Github</a>
-                <a href={deployLink}>Deploy</a>
-            </div>
-        </div>
-    )
-}
+      <div>
+        {PROJECT_ITEMS.map((item, idx) => {
+          return (
+            <a className="hover:text-emerald-400 transition ease transform duration-300" key={idx}>
+              {item.title}
+            </a>
+          );
+        })}
+      </div>
+    );
+  }
+  
