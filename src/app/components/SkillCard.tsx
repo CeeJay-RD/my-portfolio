@@ -9,8 +9,8 @@ const SkillCard: React.FC<SkillProps> = ({ imgSrc, text }) => {
     return (
       <div>
         <div className="flex flex-col  items-center">
-          <img src={imgSrc} alt={text} className="" />
-          <p className="">{text}</p>
+          <img src={imgSrc} alt={text}/>
+          <p>{text}</p>
         </div>
       </div>
     );
