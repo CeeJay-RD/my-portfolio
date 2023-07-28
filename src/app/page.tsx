@@ -3,7 +3,7 @@ import Image from "next/image";
 import SkillCard from "./components/SkillCard";
 import { motion } from "framer-motion"
 import Download from "./components/ui/Download";
-
+import Carousel from "./components/Carousel";
 
 
 export default function Home() {
@@ -126,10 +126,12 @@ export default function Home() {
         <h1 className="text-h1 font-bold max-w-xs ">
                 Last Projects
         </h1>
-
+          <Carousel/>
         
       </section>
 
     </main>
   );
 }
+
+console.log('hola')
