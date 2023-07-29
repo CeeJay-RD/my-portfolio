@@ -35,7 +35,7 @@ export default function Home() {
               <span className="text-emerald-400">h1</span>
               <span className="text-slate-400">&gt;</span>{" "}
             </h1>
-            <div className="flex justify-center items-center gap-3 mt-10">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-3 mt-10">
               <button className=" bg-black text-white py-3 px-5 rounded-md hover:bg-slate-900">Contact Me</button>
               <Download fileSrc="#" text="Download CV"/>
             </div>
