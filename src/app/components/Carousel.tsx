@@ -6,7 +6,7 @@ import { PROJECT_ITEMS } from "./data/PROJECTS_DATA";
 const Carousel = () => {
   return (
     <>
-      <div className="flex mt-5 gap-10">
+      <div className="flex flex-col md:flex md:flex-row mt-5 gap-10">
         {PROJECT_ITEMS.map((project) => {
           return <ProjectCard {...project}/>;
         })}
