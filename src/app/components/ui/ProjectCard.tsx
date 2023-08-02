@@ -9,8 +9,8 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, thumbnail, githubLink, deployLink }) => {
   return (
-    <div className="flex flex-col">
-      <h3>{title}</h3>
+    <div className="flex flex-col bg-slate-600 rounded-md p-7">
+      <p className=" text-p font-bold">{title}</p>
       <img src={thumbnail} alt={title} />
       <div className="flex">
         <Download fileSrc={githubLink} text="Github" />
