@@ -116,7 +116,7 @@ export default function Home() {
           <img
             src="https://github.com/CeeJay-RD/my-portfolio/blob/master/public/Salute%20Memoji.png?raw=true"
             alt="salute-memoji"
-            className="md:w-8/12 md:ml-16"
+            className="md:w-8/12 md:ml-80"
           />
         </motion.div>
       </section>
