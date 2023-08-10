@@ -126,7 +126,7 @@ export default function Home() {
         <h1 className="text-h1 font-bold max-w-xs ">
                 Last Projects
         </h1>
-        <div className="w-[852px]">
+        <div>
           <Carousel/>        
         </div>
       </section>
