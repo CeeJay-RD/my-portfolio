@@ -52,7 +52,7 @@ const Navbar = () => {
             })}
           </div>
           <div className="md:hidden">
-            <button
+            <button title="Hamburger Menu"
               className="flex flex-col h-12 w-12 gap-2 rounded justify-center items-end group"
               onClick={() => setIsOpen(!isOpen)}
             >
