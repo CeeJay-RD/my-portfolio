@@ -1,13 +1,13 @@
 export const PROJECT_ITEMS = [
     {
         title: "Rock, Paper, Scissors",
-        thumbnail: "../../../../public/rock-paper-scissors-thumbnail.png",
+        thumbnail: "https://github.com/CeeJay-RD/my-portfolio/blob/master/public/rock-paper-scissors-thumbnail.png?raw=true",
         githubLink: "https://github.com/CeeJay-RD/Rock-Paper-Scissors",
         deployLink: "https://ceejay-rd.github.io/Rock-Paper-Scissors/"
     },
     {
         title: "MindNet",
-        thumbnail: "#",
+        thumbnail: "https://github.com/CeeJay-RD/my-portfolio/blob/master/public/MindNet-thumbnail.png?raw=true",
         githubLink: "https://github.com/CeeJay-RD/Final-Project-Mindnet",
         deployLink: "#"
     },
@@ -19,3 +19,5 @@ export const PROJECT_ITEMS = [
     },
 
 ]
+
+// TODO: Replace pictures with proper resolution or look for another solution
